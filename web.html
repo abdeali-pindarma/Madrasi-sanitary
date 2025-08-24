@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Madrasi Sanitary and Electricals</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Madrasi Sanitary and Electricals</h1>
+    </header>
+
+    <nav>
+        <button id="btnShopChandeliers">Shop Chandeliers</button>
+        <button id="btnShopSanitary">Shop Sanitary</button>
+        <button id="btnShopByRoom">Shop by Room</button>
+        <button id="btnStyleQuiz">Style Selector Quiz</button>
+        <button id="btnRoomVisualizer">Room Visualizer</button>
+    </nav>
+
+    <main class="container">
+        <section id="featured" class="featured" aria-label="Featured products and offers">
+            <div class="featured-slide" id="slide1">
+                <h2>Elegant Chandeliers to Light Up Your Life</h2>
+                <p>Discover our luxurious collection with royal gold finishes and sparkling designs.</p>
+            </div>
+            <div class="featured-slide" id="slide2">
+                <h2>Sanitary Ware with Style & Grace</h2>
+                <p>Upgrade your bathroom with premium fixtures built for beauty and durability.</p>
+            </div>
+            <div class="featured-slide" id="slide3">
+                <h2>Bundles & Offers You Can’t Miss</h2>
+                <p>Mix and match chandeliers with sanitary sets for exclusive discounts.</p>
+            </div>
+        </section>
+
+        <section id="galleryPreview" class="gallery-preview">
+            <div class="gallery-item" tabindex="0" aria-label="Living Room Inspiration">
+                <img src="https://images.unsplash.com/photo-1602524819674-0b9a8cdbe6c2?auto=format&fit=crop&w=600&q=80" alt="Elegant living room with chandelier" />
+                <h3>Living Room</h3>
+            </div>
+            <div class="gallery-item" tabindex="0" aria-label="Bathroom Makeover Inspiration">
+                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" alt="Modern bathroom with sanitary fittings" />
+                <h3>Bathroom</h3>
+            </div>
+            <div class="gallery-item" tabindex="0" aria-label="Hallway with Lighting Inspiration">
+                <img src="https://images.unsplash.com/photo-1560448070-9e9a0d5def7e?auto=format&fit=crop&w=600&q=80" alt="Cozy hallway with chandelier" />
+                <h3>Hallway</h3>
+            </div>
+        </section>
+
+        <!-- Style Selector Quiz container -->
+        <section id="styleQuiz" class="style-quiz hidden">
+            <h2>Find Your Perfect Style</h2>
+            <div id="quizContent"></div>
+            <button id="quizPrev" class="quiz-nav" disabled>Previous</button>
+            <button id="quizNext" class="quiz-nav">Next</button>
+        </section>
+
+        <!-- Room Visualizer container -->
+        <section id="roomVisualizer" class="room-visualizer hidden">
+            <h2>Room Visualizer</h2>
+            <label for="roomSelector">Select Room:</label>
+            <select id="roomSelector">
+        <option value="living">Living Room</option>
+        <option value="bathroom">Bathroom</option>
+        <option value="hallway">Hallway</option>
+      </select>
+
+            <div class="visualizer-controls">
+                <h3>Choose Chandelier</h3>
+                <select id="chandelierSelector"></select>
+
+                <h3>Choose Sanitary Item</h3>
+                <select id="sanitarySelector"></select>
+            </div>
+
+            <div class="visualizer-preview">
+                <img id="roomImage" alt="Room preview" src="" />
+                <div id="productOverlay"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Madrasi Sanitary and Electricals — All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
